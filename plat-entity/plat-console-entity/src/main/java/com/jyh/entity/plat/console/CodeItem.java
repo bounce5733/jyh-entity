@@ -14,7 +14,7 @@ import javax.persistence.Transient;
  * @author jiangyonghua
  * @date 2017年6月19日 下午5:35:12
  */
-@Table(name="sys_code_item")
+@Table(name = "sys_code_item")
 public class CodeItem implements Comparable<CodeItem>, Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -23,7 +23,7 @@ public class CodeItem implements Comparable<CodeItem>, Serializable {
 	private String pid;// 父主键
 	private String name;// 名称
 	private String type;// 所属类型
-	private int sort;// 排序
+	private Integer sort;// 排序
 
 	private String createdBy;// 创建人
 	private String createdTime;// 创建时间
@@ -60,11 +60,11 @@ public class CodeItem implements Comparable<CodeItem>, Serializable {
 		this.type = type;
 	}
 
-	public int getSort() {
+	public Integer getSort() {
 		return sort;
 	}
 
-	public void setSort(int sort) {
+	public void setSort(Integer sort) {
 		this.sort = sort;
 	}
 
